@@ -39,7 +39,8 @@
 /* Banner */
 
 	#banner {
-		height: 20em;
+		height: 380px;
+		min-height: 380px;
 	}
 
 /* Wrapper */
