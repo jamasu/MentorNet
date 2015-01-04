@@ -627,6 +627,7 @@
 				#nav > ul > li.current {
 					font-weight: 600;
 				}
+				
 
 					#nav > ul > li.current:before {
 						-moz-transform: rotateZ(45deg);
@@ -726,7 +727,7 @@
 			left: 0;
 			width: 100%;
 			background: #212121;
-			background: #43D7F5;
+			background: #000066;
 			color: #fff;
 			top: 30px;
 			/*padding: 1.0em 0;*/

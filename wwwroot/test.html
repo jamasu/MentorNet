@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="scotchApp">
+
+<head>
+  <title>Mentor Network</title>
+  <!-- SCROLLS -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+  <!-- SPELLS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="js/script.js"></script>
+   <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+
+<noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-wide.css" />
+    </noscript>
+
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+<div id="header">
+            
+        <!-- Logo -->
+          <h1><a href="index.html" id="logo">Mentor <em> Network</em></a></h1>
+        
+        <!-- Nav -->
+          <nav id="nav">
+            <ul>
+              <li class="current"><a href="#home">Hjem</a></li>
+              <li>
+                <a href="#about">Om Mentor Network</a>
+                
+              </li>
+              <li><a href="#tjenester">Tjenester</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+              <li><a href="#partnere">Partnere</a></li>
+            </ul>
+          </nav>
+
+      </div>
+      <!-- Banner -->
+      <section id="banner">
+        <div id="backImg"></div>
+        <header>
+          <h2><em> Et nettverk for dialog og sysselsetting  </em> </h2>
+          
+        </header>
+      </section>
+      
+
+  <div id="main">
+  
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    <div ng-view></div>
+    
+  </div>
+
+<!-- Highlights -->
+      <section class="wrapper style1">
+        <div class="container">
+
+
+          <div class="row 200%">
+            <section class="4u 12u(2)">
+              <div class="box highlight">
+                <i class="icon major fa-wrench"></i>
+                <h3>Praktisk eksempel</h3>
+                <p>Her kommer et praktisk eksempel på Mentor Networks arbeid...</p>
+              </div>
+            </section>
+            <section class="4u 12u(2)">
+              <div class="box highlight">
+                <i class="icon major fa-pencil"></i>
+                <h3>Prosjekter</h3>
+                <p>Her kommer noe av prosjektene vi har på gang med våre samarbeidspartnere.</p>
+              </div>
+            </section>
+            <section class="4u 12u(2)">
+              <div class="box highlight">
+                <i class="icon major fa-paper-plane"></i>
+                <h3>Kontakt oss</h3>
+                <p>Benytt kontaktskjemaet for å komme i kontakt med oss uforpliktende.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+  
+  
+    <!-- Footer -->
+      <div id="footer">
+        <div class="container">
+          <div class="row">
+            <section class="3u 6u(2) 12u$(3)">
+              <h3></h3>
+              <ul class="links">
+              
+              
+              
+            </section>
+            
+          
+          </div>
+        </div>
+
+        <!-- Icons -->
+          <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+          </ul>
+
+        <!-- Copyright -->
+          <div class="copyright">
+            <ul class="menu">
+              <li>&copy; All rights reserved Mentor Network 2015</li>
+            </ul>
+          </div>
+
+      </div>
+</body>
+
+</html>
