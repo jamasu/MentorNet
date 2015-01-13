@@ -35,11 +35,6 @@
 <!-- define angular controller -->
 <body>
 
-  <!-- Define the main view here, this is then replaced by different partial views by angular -->
-  <div ng-view></div>
-  <!-- Anything below here is supposed to be footer of the page that is constant, social media etc. -->
-
-
 <!-- TODO REMOVE-->
   <div id="header">
 
@@ -51,10 +46,10 @@
 
       <ul>
         <li><a href="#home">Hjem</a></li>
-        <li class="current"><a href="#about">Om Mentor Network</a></li>
-        <li><a href="#service">Tjenester</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-        <li><a href="#partnere">Partnere</a></li>
+        <li class="{{current[0]}}"><a href="#about">Om Mentor Network</a></li>
+        <li class="{{current[1]}}"><a href="#service">Tjenester</a></li>
+        <li class="{{current[2]}}"><a href="#contact">Kontakt</a></li>
+        <li class="{{current[3]}}"><a href="#partnere">Partnere</a></li>
       </ul>
     </nav>
 
