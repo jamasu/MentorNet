@@ -20,18 +20,27 @@ scotchControllers.controller('LeagueListCtrl', ['$scope', '$http',
   }]);
 */
 
+function setCurrent(c) {
+        var myArray = new Array(5);
+        myArray[0] = "A";
+        myArray[1] = "B";
+        myArray[2] = "C";
+        myArray[3] = "D";
+        return myArray;
+   }
 
 scotchControllers.controller('mainController', ['$scope', '$rootScope', function($scope, $rootScope) {
         // create a message to display in our view
-        $scope.message = 'mainController';
+        $scope.message = '';
 
-        $rootScope.current = new Array(4);
+        $rootScope.current = new Array();
         $rootScope.current[0] = 'current';
         $rootScope.current[1] = 'non';
         $rootScope.current[2] = 'non';
         $rootScope.current[3] = 'non';
-      }]);
+        $rootScope.current[4] = 'non';
 
+      }]);
 scotchControllers.controller('aboutController', ['$scope', '$rootScope', function($scope, $rootScope) {
         // create a message to display in our view
         $scope.message = 'aboutController';
@@ -40,6 +49,18 @@ scotchControllers.controller('aboutController', ['$scope', '$rootScope', functio
         $rootScope.current[1] = 'current';
         $rootScope.current[2] = 'non';
         $rootScope.current[3] = 'non';
+        $rootScope.current[4] = 'non';
+      }]);
+
+scotchControllers.controller('serviceController', ['$scope', '$rootScope', function($scope, $rootScope) {
+        // create a message to display in our view
+        $scope.message = 'serviceController';
+
+        $rootScope.current[0] = 'non';
+        $rootScope.current[1] = 'non';
+        $rootScope.current[2] = 'current';
+        $rootScope.current[3] = 'non';
+        $rootScope.current[4] = 'non';
 
       }]);
 
@@ -49,18 +70,20 @@ scotchControllers.controller('contactController', ['$scope', '$rootScope', funct
 
         $rootScope.current[0] = 'non';
         $rootScope.current[1] = 'non';
-        $rootScope.current[2] = 'current';
-        $rootScope.current[3] = 'non';
+        $rootScope.current[2] = 'non';
+        $rootScope.current[3] = 'current';
+        $rootScope.current[4] = 'non';
 
       }]);
 
-scotchControllers.controller('serviceController', ['$scope', '$rootScope', function($scope, $rootScope) {
+scotchControllers.controller('partnersController', ['$scope', '$rootScope', function($scope, $rootScope) {
         // create a message to display in our view
-        $scope.message = 'serviceController';
+        $scope.message = 'partnersController';
 
         $rootScope.current[0] = 'non';
         $rootScope.current[1] = 'non';
         $rootScope.current[2] = 'non';
-        $rootScope.current[3] = 'current';
+        $rootScope.current[3] = 'non';
+        $rootScope.current[4] = 'current';
       }]);
 
