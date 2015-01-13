@@ -7,6 +7,8 @@ var scotchApp = angular.module('scotchApp', [
   'scotchControllers'
   ]);
 
+/* Configure routing here as needed */
+
 scotchApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
@@ -34,18 +36,3 @@ scotchApp.config(['$routeProvider',
       redirectTo: '/home'
     });
   }]);
-
-
-/*
-scotchApp.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when('/premierLeague', {
-        templateUrl: 'partials/premier-league.html',
-        controller: 'LeagueListCtrl'
-      }).
-      otherwise({
-        redirectTo: '/premierLeague'
-      });
-  }]);
-*/
