@@ -862,3 +862,9 @@
 			text-align: center;
 			font-size: 0.9em;
 		}
+
+		 #map-canvas {
+        width: 5
+        1300px;
+        height: 400px;
+      }
