@@ -34,7 +34,20 @@ scotchControllers.controller('contactController', ['$scope', '$rootScope', funct
 scotchControllers.controller('partnersController', ['$scope', '$rootScope', function($scope, $rootScope) {
         // create a message to display in our view
         $scope.message = 'partnersController';
+
+     $rootScope.current = ['non', 'non', 'non', 'non', 'current'];
+    }]);
+
+scotchControllers.controller('practicalController', ['$scope', '$rootScope', function($scope, $rootScope) {
+        // create a message to display in our view
+        $scope.message = 'practicalController';
         
         $rootScope.current = ['non', 'non', 'non', 'non', 'current'];
     }]);
 
+scotchControllers.controller('projectsController', ['$scope', '$rootScope', function($scope, $rootScope) {
+        // create a message to display in our view
+        $scope.message = 'projectsController';
+        
+        $rootScope.current = ['non', 'non', 'non', 'non', 'current'];
+    }]);

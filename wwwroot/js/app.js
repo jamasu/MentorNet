@@ -32,6 +32,14 @@ scotchApp.config(['$routeProvider',
       templateUrl : 'partials/partners.html',
       controller  : 'partnersController'
     }).
+     when('/practical', {
+      templateUrl : 'partials/practical.html',
+      controller  : 'practicalController'
+    }).
+      when('/projects', {
+      templateUrl : 'partials/projects.html',
+      controller  : 'projectsController'
+    }).
     otherwise({
       redirectTo: '/home'
     });
