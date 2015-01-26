@@ -11,7 +11,7 @@
 
 	body,
 	#skel-layers-wrapper {
-		background: #f7f7f7 url("images/bg01.png");
+		background: none repeat scroll 0% 0% #444 !important;
 	}
 
 	body.is-loading * {
@@ -46,10 +46,14 @@
 		border-bottom: dotted 1px;
 	}
 
-		a:hover {
-			color: #37c0fb;
-			border-bottom-color: transparent;
-		}
+	a:hover {
+		color: #37c0fb;
+		border-bottom-color: transparent;
+	}
+
+	#logo:hover {
+		color: #85BF41;
+	}
 
 	strong, b {
 		font-weight: 600;
@@ -151,6 +155,7 @@
 
 		footer > :last-child {
 			margin-bottom: 0;
+			background: none repeat scroll 0% 0% #4D4D4D;
 		}
 
 		footer.major {
@@ -585,7 +590,7 @@
 		text-align: center;
 		color: #FFF;
 		padding: 1em 0 0 0;
-		background-color: #79AE3B;
+		background-color: #444;
 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
 		background-position: top left,					top left,					top left;
 		background-size: 100% 6em,					100% 6em,					auto;
@@ -826,7 +831,7 @@
 /* Footer */
 
 	#footer {
-		padding: 0em 0px 2em;
+		padding: 4em 0px 0em;
 	}
 
 		#footer a {
@@ -835,7 +840,7 @@
 		}
 
 			#footer a:hover {
-				color: #37c0fb;
+				color: #fff;
 				border-bottom-color: transparent;
 			}
 
@@ -849,11 +854,11 @@
 		}
 
 			#footer .icons a {
-				color: #999999;
+				color: #B7B7B7;
 			}
 
 				#footer .icons a:hover {
-					color: #474747;
+					color: #fff;
 				}
 
 		#footer .copyright {
