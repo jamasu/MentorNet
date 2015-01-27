@@ -9,6 +9,9 @@
 
 /* Basic */
 
+	/* pointer styling fix angularjs */
+	.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 	body,
 	#skel-layers-wrapper {
 		background: none repeat scroll 0% 0% #444 !important;
@@ -42,7 +45,7 @@
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		color: #37c0fb;
-		text-decoration: none;
+		text-decoration: none !important;
 		border-bottom: dotted 1px;
 	}
 
@@ -50,6 +53,17 @@
 		color: #37c0fb;
 		border-bottom-color: transparent;
 	}
+
+
+	/* Carousel */
+
+	.carousel {
+	    height: 500px;
+	    margin-bottom: 60px;
+	}
+
+
+	/* Logo top */
 
 	#logo:hover {
 		color: #85BF41;
@@ -233,6 +247,16 @@
 	}
 
 /* Image */
+
+	#logo {
+		padding-left: 90px;
+		background: url("../images/logoTransSmall.png");
+		background-size: 80px;
+		background-repeat: no-repeat;
+		background-position: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 
 	.image {
 		border: 0;
