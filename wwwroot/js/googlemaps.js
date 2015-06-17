@@ -7,7 +7,7 @@
   var mapOptions = {
     zoom: 10,
     center: myLatlng,
-    mapTypeId: google.maps.MapTypeId.HYBRID
+    mapTypeId: google.maps.MapTypeId.ROADMAP
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
