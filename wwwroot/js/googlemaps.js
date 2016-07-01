@@ -3,7 +3,7 @@
   function mapController($scope, $routeParams) {
     $scope.initialize = function() {
 
-  var myLatlng = new google.maps.LatLng(59.93039062291619, 10.885745286941528);
+  var myLatlng = new google.maps.LatLng(59.93535, 10.89359);
   var mapOptions = {
     zoom: 10,
     center: myLatlng,
